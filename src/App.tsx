@@ -146,7 +146,7 @@ function App() {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <Title>Trello Clone</Title>
+      <Title>Trello ToDo</Title>
       <CreateForm />
       <Wrapper>
         <Boards>
