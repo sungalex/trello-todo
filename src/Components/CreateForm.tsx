@@ -18,13 +18,17 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
+  background-color: ${(props) => props.theme.cardColor};
   border-style: none;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 30px;
   text-align: center;
   ::placeholder {
-    color: ${(props) => props.theme.boardColor};
+    color: #a7a7a7;
+  }
+  :focus {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
   }
 `;
 
@@ -52,6 +56,7 @@ function CreateForm() {
           {...register("boardId", { required: true })}
           type="text"
           placeholder="Create Board: Enter BoardName"
+          autoComplete="off"
         />
       </Form>
     </Wrapper>

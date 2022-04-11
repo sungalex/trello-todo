@@ -23,6 +23,7 @@ const Icon = styled.span`
   padding: 5px;
   :hover {
     color: #fff700;
+    font-size: 300%;
   }
 `;
 

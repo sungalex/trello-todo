@@ -41,7 +41,10 @@ const Input = styled.input`
   border-radius: 5px;
   text-align: center;
   ::placeholder {
-    color: #b2bec3;
+    color: #a7a7a7;
+  }
+  :focus {
+    outline: 2px solid #93c2ff;
   }
 `;
 
@@ -90,6 +93,7 @@ function Board({ boardId, toDos }: IBoardProps) {
           {...register("toDo", { required: true })}
           type="text"
           placeholder={`Add task on ${boardId}`}
+          autoComplete="off"
         />
       </Form>
       <Droppable droppableId={boardId}>
